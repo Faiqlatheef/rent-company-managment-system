@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F4998323-5E57-4097-A727-0A66F40F6452}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AyuboDriveFinal</RootNamespace>
+    <AssemblyName>AyuboDriveFinal</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AvailableVehicles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvailableVehicles.Designer.cs">
+      <DependentUpon>AvailableVehicles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookcusbyvehicleID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookcusbyvehicleID.Designer.cs">
+      <DependentUpon>bookcusbyvehicleID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookdcusbyhireID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookdcusbyhireID.Designer.cs">
+      <DependentUpon>bookdcusbyhireID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookdcusbyrentID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookdcusbyrentID.Designer.cs">
+      <DependentUpon>bookdcusbyrentID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookunbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookunbook.Designer.cs">
+      <DependentUpon>bookunbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cash.Designer.cs">
+      <DependentUpon>Cash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonClass.cs" />
+    <Compile Include="ConnectionClass.cs" />
+    <Compile Include="Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customerprofit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customerprofit.Designer.cs">
+      <DependentUpon>customerprofit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Driver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Driver.Designer.cs">
+      <DependentUpon>Driver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hire.Designer.cs">
+      <DependentUpon>Hire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HirePayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HirePayment.Designer.cs">
+      <DependentUpon>HirePayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hirepaymenttable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hirepaymenttable.Designer.cs">
+      <DependentUpon>hirepaymenttable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hire_packages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hire_packages.Designer.cs">
+      <DependentUpon>Hire_packages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginform.Designer.cs">
+      <DependentUpon>loginform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainForm.Designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainfrmcntn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainfrmcntn.Designer.cs">
+      <DependentUpon>mainfrmcntn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pattycash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pattycash.Designer.cs">
+      <DependentUpon>pattycash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rates.Designer.cs">
+      <DependentUpon>Rates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rent.Designer.cs">
+      <DependentUpon>Rent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RentPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentPayment.Designer.cs">
+      <DependentUpon>RentPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rentpaymenttable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rentpaymenttable.Designer.cs">
+      <DependentUpon>rentpaymenttable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportMainForm.Designer.cs">
+      <DependentUpon>ReportMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="topdriver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="topdriver.Designer.cs">
+      <DependentUpon>topdriver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="totalcoast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="totalcoast.Designer.cs">
+      <DependentUpon>totalcoast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="totalincome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="totalincome.Designer.cs">
+      <DependentUpon>totalincome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="totalprofit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="totalprofit.Designer.cs">
+      <DependentUpon>totalprofit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vehiclecoast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vehiclecoast.Designer.cs">
+      <DependentUpon>vehiclecoast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vehicleincome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vehicleincome.Designer.cs">
+      <DependentUpon>vehicleincome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehicles.Designer.cs">
+      <DependentUpon>Vehicles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleType.Designer.cs">
+      <DependentUpon>VehicleType.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AvailableVehicles.resx">
+      <DependentUpon>AvailableVehicles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookcusbyvehicleID.resx">
+      <DependentUpon>bookcusbyvehicleID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookdcusbyhireID.resx">
+      <DependentUpon>bookdcusbyhireID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookdcusbyrentID.resx">
+      <DependentUpon>bookdcusbyrentID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookunbook.resx">
+      <DependentUpon>bookunbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cash.resx">
+      <DependentUpon>Cash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerprofit.resx">
+      <DependentUpon>customerprofit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Driver.resx">
+      <DependentUpon>Driver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hire.resx">
+      <DependentUpon>Hire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HirePayment.resx">
+      <DependentUpon>HirePayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hirepaymenttable.resx">
+      <DependentUpon>hirepaymenttable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hire_packages.resx">
+      <DependentUpon>Hire_packages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginform.resx">
+      <DependentUpon>loginform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainForm.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainfrmcntn.resx">
+      <DependentUpon>mainfrmcntn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pattycash.resx">
+      <DependentUpon>pattycash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Rates.resx">
+      <DependentUpon>Rates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rent.resx">
+      <DependentUpon>Rent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RentPayment.resx">
+      <DependentUpon>RentPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rentpaymenttable.resx">
+      <DependentUpon>rentpaymenttable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportMainForm.resx">
+      <DependentUpon>ReportMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="topdriver.resx">
+      <DependentUpon>topdriver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="totalcoast.resx">
+      <DependentUpon>totalcoast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="totalincome.resx">
+      <DependentUpon>totalincome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="totalprofit.resx">
+      <DependentUpon>totalprofit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vehiclecoast.resx">
+      <DependentUpon>vehiclecoast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vehicleincome.resx">
+      <DependentUpon>vehicleincome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicles.resx">
+      <DependentUpon>Vehicles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleType.resx">
+      <DependentUpon>VehicleType.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\115-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8181.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1518409943.2618_23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ayubo-Featured-Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business_avatar_man_businessman_profile_account_contact_person-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DETAILED_MANDALA_DESIGN_ORANGE_WHITE_grande.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flat,550x550,075,f.u3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_20190611_224536.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_20190708_200836.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1040887576-1024x1024.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Orange-Abstract-Background-White-www.wallpapersbrowse.com.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
